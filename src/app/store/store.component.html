@@ -1,3 +1,7 @@
+<button (click)="toggleVeggiesNotFruit()">
+  <p *ngIf="onlyVeggiesNotFruit">Filter: Only vegetables</p>
+  <p *ngIf="!onlyVeggiesNotFruit">Filter: Only fruit</p>
+</button>
 <ul class="item-list store--item-list">
     <app-store-item
     *ngFor="let item of items"
