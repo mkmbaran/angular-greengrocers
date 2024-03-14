@@ -1,0 +1,8 @@
+<div class="cart--item-list-container">
+    <ul class="item-list cart--item-list">
+      <app-cart-item
+      *ngFor="let itemInCart of itemsInCart"
+        [itemInCart]="itemInCart"
+      ></app-cart-item>
+    </ul>
+  </div>
